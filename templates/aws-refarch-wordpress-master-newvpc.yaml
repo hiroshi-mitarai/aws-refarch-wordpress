@@ -1030,7 +1030,7 @@ Resources:
         PublicAlbFullName:
           !GetAtt [ publicalb, Outputs.PublicAlbFullName ]
         EfsCreateAlarms:
-          !Ref EfsCreateAlarms         
+          !Ref EfsCreateAlarms
       TemplateURL: https://s3.amazonaws.com/aws-refarch/wordpress/latest/templates/aws-refarch-wordpress-06-dashboard.yaml
   dashboardwithnoalarms:
     Condition: EfsCreateNoAlarms
@@ -1284,7 +1284,7 @@ Resources:
           !Ref WPTitle
         WPVersion:
           !Ref WPVersion
-      TemplateURL: https://s3.amazonaws.com/aws-refarch/wordpress/latest/templates/aws-refarch-wordpress-04-web.yaml
+      TemplateURL: https://nw-geco-cfn-templates.s3.amazonaws.com/aws-refarch-wordpress-04-web.yaml
 
 Outputs:
 
